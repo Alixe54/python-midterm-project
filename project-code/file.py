@@ -1,7 +1,7 @@
 class File:
-    def __init__(self, name):
+    def __init__(self, name, contents:list[str] = None):
         self.name = name
-        self.contents = []
+        self.contents = contents if contents is not None else []
 
     def nwfiletxt_command(self, contents: list) -> None:
         self.contents.clear()

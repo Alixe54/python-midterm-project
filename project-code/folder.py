@@ -1,7 +1,7 @@
 class Folder:
-    def __init__(self, name, root: list= None):
+    def __init__(self, name, contents:dict=None, root: list= None):
         self.name = name
-        self.contents = {}
+        self.contents = contents if contents is not None else {}
         # self.root = root
 
     def add_content(self, name, content):
